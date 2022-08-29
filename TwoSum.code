@@ -1,0 +1,776 @@
+program
+	int ERROR;
+	int expected;
+	initInputs(ref arrayLen, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, input44, input45, input46, input47, input48, input49, input50, input51, input52, input53, input54, input55, input56, input57, input58, input59, input60, input61, input62, input63, input64, input65, input66, input67, input68, input69, input70, input71, input72, input73, input74, input75, input76, input77, input78, input79, input80, input81, input82, input83, input84, input85, input86, input87, input88, input89, input90, input91, input92, input93, input94, input95, input96, input97, input98, input99) {
+			if 0 < arrayLen then {
+					input0 = input();
+			}
+			if 1 < arrayLen then {
+					input1 = input();
+			}
+			if 2 < arrayLen then {
+					input2 = input();
+			}
+			if 3 < arrayLen then {
+					input3 = input();
+			}
+			if 4 < arrayLen then {
+					input4 = input();
+			}
+			if 5 < arrayLen then {
+					input5 = input();
+			}
+			if 6 < arrayLen then {
+					input6 = input();
+			}
+			if 7 < arrayLen then {
+					input7 = input();
+			}
+			if 8 < arrayLen then {
+					input8 = input();
+			}
+			if 9 < arrayLen then {
+					input9 = input();
+			}
+			if 10 < arrayLen then {
+					input10 = input();
+			}
+			if 11 < arrayLen then {
+					input11 = input();
+			}
+			if 12 < arrayLen then {
+					input12 = input();
+			}
+			if 13 < arrayLen then {
+					input13 = input();
+			}
+			if 14 < arrayLen then {
+					input14 = input();
+			}
+			if 15 < arrayLen then {
+					input15 = input();
+			}
+			if 16 < arrayLen then {
+					input16 = input();
+			}
+			if 17 < arrayLen then {
+					input17 = input();
+			}
+			if 18 < arrayLen then {
+					input18 = input();
+			}
+			if 19 < arrayLen then {
+					input19 = input();
+			}
+			if 20 < arrayLen then {
+					input20 = input();
+			}
+			if 21 < arrayLen then {
+					input21 = input();
+			}
+			if 22 < arrayLen then {
+					input22 = input();
+			}
+			if 23 < arrayLen then {
+					input23 = input();
+			}
+			if 24 < arrayLen then {
+					input24 = input();
+			}
+			if 25 < arrayLen then {
+					input25 = input();
+			}
+			if 26 < arrayLen then {
+					input26 = input();
+			}
+			if 27 < arrayLen then {
+					input27 = input();
+			}
+			if 28 < arrayLen then {
+					input28 = input();
+			}
+			if 29 < arrayLen then {
+					input29 = input();
+			}
+			if 30 < arrayLen then {
+					input30 = input();
+			}
+			if 31 < arrayLen then {
+					input31 = input();
+			}
+			if 32 < arrayLen then {
+					input32 = input();
+			}
+			if 33 < arrayLen then {
+					input33 = input();
+			}
+			if 34 < arrayLen then {
+					input34 = input();
+			}
+			if 35 < arrayLen then {
+					input35 = input();
+			}
+			if 36 < arrayLen then {
+					input36 = input();
+			}
+			if 37 < arrayLen then {
+					input37 = input();
+			}
+			if 38 < arrayLen then {
+					input38 = input();
+			}
+			if 39 < arrayLen then {
+					input39 = input();
+			}
+			if 40 < arrayLen then {
+					input40 = input();
+			}
+			if 41 < arrayLen then {
+					input41 = input();
+			}
+			if 42 < arrayLen then {
+					input42 = input();
+			}
+			if 43 < arrayLen then {
+					input43 = input();
+			}
+			if 44 < arrayLen then {
+					input44 = input();
+			}
+			if 45 < arrayLen then {
+					input45 = input();
+			}
+			if 46 < arrayLen then {
+					input46 = input();
+			}
+			if 47 < arrayLen then {
+					input47 = input();
+			}
+			if 48 < arrayLen then {
+					input48 = input();
+			}
+			if 49 < arrayLen then {
+					input49 = input();
+			}
+			if 50 < arrayLen then {
+					input50 = input();
+			}
+			if 51 < arrayLen then {
+					input51 = input();
+			}
+			if 52 < arrayLen then {
+					input52 = input();
+			}
+			if 53 < arrayLen then {
+					input53 = input();
+			}
+			if 54 < arrayLen then {
+					input54 = input();
+			}
+			if 55 < arrayLen then {
+					input55 = input();
+			}
+			if 56 < arrayLen then {
+					input56 = input();
+			}
+			if 57 < arrayLen then {
+					input57 = input();
+			}
+			if 58 < arrayLen then {
+					input58 = input();
+			}
+			if 59 < arrayLen then {
+					input59 = input();
+			}
+			if 60 < arrayLen then {
+					input60 = input();
+			}
+			if 61 < arrayLen then {
+					input61 = input();
+			}
+			if 62 < arrayLen then {
+					input62 = input();
+			}
+			if 63 < arrayLen then {
+					input63 = input();
+			}
+			if 64 < arrayLen then {
+					input64 = input();
+			}
+			if 65 < arrayLen then {
+					input65 = input();
+			}
+			if 66 < arrayLen then {
+					input66 = input();
+			}
+			if 67 < arrayLen then {
+					input67 = input();
+			}
+			if 68 < arrayLen then {
+					input68 = input();
+			}
+			if 69 < arrayLen then {
+					input69 = input();
+			}
+			if 70 < arrayLen then {
+					input70 = input();
+			}
+			if 71 < arrayLen then {
+					input71 = input();
+			}
+			if 72 < arrayLen then {
+					input72 = input();
+			}
+			if 73 < arrayLen then {
+					input73 = input();
+			}
+			if 74 < arrayLen then {
+					input74 = input();
+			}
+			if 75 < arrayLen then {
+					input75 = input();
+			}
+			if 76 < arrayLen then {
+					input76 = input();
+			}
+			if 77 < arrayLen then {
+					input77 = input();
+			}
+			if 78 < arrayLen then {
+					input78 = input();
+			}
+			if 79 < arrayLen then {
+					input79 = input();
+			}
+			if 80 < arrayLen then {
+					input80 = input();
+			}
+			if 81 < arrayLen then {
+					input81 = input();
+			}
+			if 82 < arrayLen then {
+					input82 = input();
+			}
+			if 83 < arrayLen then {
+					input83 = input();
+			}
+			if 84 < arrayLen then {
+					input84 = input();
+			}
+			if 85 < arrayLen then {
+					input85 = input();
+			}
+			if 86 < arrayLen then {
+					input86 = input();
+			}
+			if 87 < arrayLen then {
+					input87 = input();
+			}
+			if 88 < arrayLen then {
+					input88 = input();
+			}
+			if 89 < arrayLen then {
+					input89 = input();
+			}
+			if 90 < arrayLen then {
+					input90 = input();
+			}
+			if 91 < arrayLen then {
+					input91 = input();
+			}
+			if 92 < arrayLen then {
+					input92 = input();
+			}
+			if 93 < arrayLen then {
+					input93 = input();
+			}
+			if 94 < arrayLen then {
+					input94 = input();
+			}
+			if 95 < arrayLen then {
+					input95 = input();
+			}
+			if 96 < arrayLen then {
+					input96 = input();
+			}
+			if 97 < arrayLen then {
+					input97 = input();
+			}
+			if 98 < arrayLen then {
+					input98 = input();
+			}
+			if 99 < arrayLen then {
+					input99 = input();
+			}
+	}
+        
+	updateVal(ref val, index, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, input44, input45, input46, input47, input48, input49, input50, input51, input52, input53, input54, input55, input56, input57, input58, input59, input60, input61, input62, input63, input64, input65, input66, input67, input68, input69, input70, input71, input72, input73, input74, input75, input76, input77, input78, input79, input80, input81, input82, input83, input84, input85, input86, input87, input88, input89, input90, input91, input92, input93, input94, input95, input96, input97, input98, input99) {
+			if index == 0 then {
+					val = input0;
+			}
+			if index == 1 then {
+					val = input1;
+			}
+			if index == 2 then {
+					val = input2;
+			}
+			if index == 3 then {
+					val = input3;
+			}
+			if index == 4 then {
+					val = input4;
+			}
+			if index == 5 then {
+					val = input5;
+			}
+			if index == 6 then {
+					val = input6;
+			}
+			if index == 7 then {
+					val = input7;
+			}
+			if index == 8 then {
+					val = input8;
+			}
+			if index == 9 then {
+					val = input9;
+			}
+			if index == 10 then {
+					val = input10;
+			}
+			if index == 11 then {
+					val = input11;
+			}
+			if index == 12 then {
+					val = input12;
+			}
+			if index == 13 then {
+					val = input13;
+			}
+			if index == 14 then {
+					val = input14;
+			}
+			if index == 15 then {
+					val = input15;
+			}
+			if index == 16 then {
+					val = input16;
+			}
+			if index == 17 then {
+					val = input17;
+			}
+			if index == 18 then {
+					val = input18;
+			}
+			if index == 19 then {
+					val = input19;
+			}
+			if index == 20 then {
+					val = input20;
+			}
+			if index == 21 then {
+					val = input21;
+			}
+			if index == 22 then {
+					val = input22;
+			}
+			if index == 23 then {
+					val = input23;
+			}
+			if index == 24 then {
+					val = input24;
+			}
+			if index == 25 then {
+					val = input25;
+			}
+			if index == 26 then {
+					val = input26;
+			}
+			if index == 27 then {
+					val = input27;
+			}
+			if index == 28 then {
+					val = input28;
+			}
+			if index == 29 then {
+					val = input29;
+			}
+			if index == 30 then {
+					val = input30;
+			}
+			if index == 31 then {
+					val = input31;
+			}
+			if index == 32 then {
+					val = input32;
+			}
+			if index == 33 then {
+					val = input33;
+			}
+			if index == 34 then {
+					val = input34;
+			}
+			if index == 35 then {
+					val = input35;
+			}
+			if index == 36 then {
+					val = input36;
+			}
+			if index == 37 then {
+					val = input37;
+			}
+			if index == 38 then {
+					val = input38;
+			}
+			if index == 39 then {
+					val = input39;
+			}
+			if index == 40 then {
+					val = input40;
+			}
+			if index == 41 then {
+					val = input41;
+			}
+			if index == 42 then {
+					val = input42;
+			}
+			if index == 43 then {
+					val = input43;
+			}
+			if index == 44 then {
+					val = input44;
+			}
+			if index == 45 then {
+					val = input45;
+			}
+			if index == 46 then {
+					val = input46;
+			}
+			if index == 47 then {
+					val = input47;
+			}
+			if index == 48 then {
+					val = input48;
+			}
+			if index == 49 then {
+					val = input49;
+			}
+			if index == 50 then {
+					val = input50;
+			}
+			if index == 51 then {
+					val = input51;
+			}
+			if index == 52 then {
+					val = input52;
+			}
+			if index == 53 then {
+					val = input53;
+			}
+			if index == 54 then {
+					val = input54;
+			}
+			if index == 55 then {
+					val = input55;
+			}
+			if index == 56 then {
+					val = input56;
+			}
+			if index == 57 then {
+					val = input57;
+			}
+			if index == 58 then {
+					val = input58;
+			}
+			if index == 59 then {
+					val = input59;
+			}
+			if index == 60 then {
+					val = input60;
+			}
+			if index == 61 then {
+					val = input61;
+			}
+			if index == 62 then {
+					val = input62;
+			}
+			if index == 63 then {
+					val = input63;
+			}
+			if index == 64 then {
+					val = input64;
+			}
+			if index == 65 then {
+					val = input65;
+			}
+			if index == 66 then {
+					val = input66;
+			}
+			if index == 67 then {
+					val = input67;
+			}
+			if index == 68 then {
+					val = input68;
+			}
+			if index == 69 then {
+					val = input69;
+			}
+			if index == 70 then {
+					val = input70;
+			}
+			if index == 71 then {
+					val = input71;
+			}
+			if index == 72 then {
+					val = input72;
+			}
+			if index == 73 then {
+					val = input73;
+			}
+			if index == 74 then {
+					val = input74;
+			}
+			if index == 75 then {
+					val = input75;
+			}
+			if index == 76 then {
+					val = input76;
+			}
+			if index == 77 then {
+					val = input77;
+			}
+			if index == 78 then {
+					val = input78;
+			}
+			if index == 79 then {
+					val = input79;
+			}
+			if index == 80 then {
+					val = input80;
+			}
+			if index == 81 then {
+					val = input81;
+			}
+			if index == 82 then {
+					val = input82;
+			}
+			if index == 83 then {
+					val = input83;
+			}
+			if index == 84 then {
+					val = input84;
+			}
+			if index == 85 then {
+					val = input85;
+			}
+			if index == 86 then {
+					val = input86;
+			}
+			if index == 87 then {
+					val = input87;
+			}
+			if index == 88 then {
+					val = input88;
+			}
+			if index == 89 then {
+					val = input89;
+			}
+			if index == 90 then {
+					val = input90;
+			}
+			if index == 91 then {
+					val = input91;
+			}
+			if index == 92 then {
+					val = input92;
+			}
+			if index == 93 then {
+					val = input93;
+			}
+			if index == 94 then {
+					val = input94;
+			}
+			if index == 95 then {
+					val = input95;
+			}
+			if index == 96 then {
+					val = input96;
+			}
+			if index == 97 then {
+					val = input97;
+			}
+			if index == 98 then {
+					val = input98;
+			}
+			if index == 99 then {
+					val = input99;
+			}
+	}
+begin
+	expected = input();
+	ref size;
+	size = new class;
+	int ans1, ans2;
+	size = input();
+	if size < 2 then {
+		ERROR = 20;
+		output(ERROR);
+	}
+
+	ref input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, input44, input45, input46, input47, input48, input49, input50, input51, input52, input53, input54, input55, input56, input57, input58, input59, input60, input61, input62, input63, input64, input65, input66, input67, input68, input69, input70, input71, input72, input73, input74, input75, input76, input77, input78, input79, input80, input81, input82, input83, input84, input85, input86, input87, input88, input89, input90, input91, input92, input93, input94, input95, input96, input97, input98, input99;
+	input0 = new class;
+	input1 = new class;
+	input2 = new class;
+	input3 = new class;
+	input4 = new class;
+	input5 = new class;
+	input6 = new class;
+	input7 = new class;
+	input8 = new class;
+	input9 = new class;
+	input10 = new class;
+	input11 = new class;
+	input12 = new class;
+	input13 = new class;
+	input14 = new class;
+	input15 = new class;
+	input16 = new class;
+	input17 = new class;
+	input18 = new class;
+	input19 = new class;
+	input20 = new class;
+	input21 = new class;
+	input22 = new class;
+	input23 = new class;
+	input24 = new class;
+	input25 = new class;
+	input26 = new class;
+	input27 = new class;
+	input28 = new class;
+	input29 = new class;
+	input30 = new class;
+	input31 = new class;
+	input32 = new class;
+	input33 = new class;
+	input34 = new class;
+	input35 = new class;
+	input36 = new class;
+	input37 = new class;
+	input38 = new class;
+	input39 = new class;
+	input40 = new class;
+	input41 = new class;
+	input42 = new class;
+	input43 = new class;
+	input44 = new class;
+	input45 = new class;
+	input46 = new class;
+	input47 = new class;
+	input48 = new class;
+	input49 = new class;
+	input50 = new class;
+	input51 = new class;
+	input52 = new class;
+	input53 = new class;
+	input54 = new class;
+	input55 = new class;
+	input56 = new class;
+	input57 = new class;
+	input58 = new class;
+	input59 = new class;
+	input60 = new class;
+	input61 = new class;
+	input62 = new class;
+	input63 = new class;
+	input64 = new class;
+	input65 = new class;
+	input66 = new class;
+	input67 = new class;
+	input68 = new class;
+	input69 = new class;
+	input70 = new class;
+	input71 = new class;
+	input72 = new class;
+	input73 = new class;
+	input74 = new class;
+	input75 = new class;
+	input76 = new class;
+	input77 = new class;
+	input78 = new class;
+	input79 = new class;
+	input80 = new class;
+	input81 = new class;
+	input82 = new class;
+	input83 = new class;
+	input84 = new class;
+	input85 = new class;
+	input86 = new class;
+	input87 = new class;
+	input88 = new class;
+	input89 = new class;
+	input90 = new class;
+	input91 = new class;
+	input92 = new class;
+	input93 = new class;
+	input94 = new class;
+	input95 = new class;
+	input96 = new class;
+	input97 = new class;
+	input98 = new class;
+	input99 = new class;
+	begin initInputs(size, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, input44, input45, input46, input47, input48, input49, input50, input51, input52, input53, input54, input55, input56, input57, input58, input59, input60, input61, input62, input63, input64, input65, input66, input67, input68, input69, input70, input71, input72, input73, input74, input75, input76, input77, input78, input79, input80, input81, input82, input83, input84, input85, input86, input87, input88, input89, input90, input91, input92, input93, input94, input95, input96, input97, input98, input99);
+	
+	int numUpdates;
+	ref index1, index2;
+	index1 = new class;
+	index2 = new class;
+	numUpdates = 2;
+	index1 = 0;
+	index2 = 1;
+	ref val1, val2;
+	val1 = new class;
+	val2 = new class;
+	int answerFound;
+	if ERROR == 0 then {
+		while answerFound == 0 {
+			while !(numUpdates == 0){
+				if numUpdates == 2 then{
+					begin updateVal(val1, index1, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, input44, input45, input46, input47, input48, input49, input50, input51, input52, input53, input54, input55, input56, input57, input58, input59, input60, input61, input62, input63, input64, input65, input66, input67, input68, input69, input70, input71, input72, input73, input74, input75, input76, input77, input78, input79, input80, input81, input82, input83, input84, input85, input86, input87, input88, input89, input90, input91, input92, input93, input94, input95, input96, input97, input98, input99);
+				}
+				else {
+					if numUpdates == 1 then {
+						begin updateVal(val2, index2, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, input44, input45, input46, input47, input48, input49, input50, input51, input52, input53, input54, input55, input56, input57, input58, input59, input60, input61, input62, input63, input64, input65, input66, input67, input68, input69, input70, input71, input72, input73, input74, input75, input76, input77, input78, input79, input80, input81, input82, input83, input84, input85, input86, input87, input88, input89, input90, input91, input92, input93, input94, input95, input96, input97, input98, input99);
+					}
+					else {
+						ERROR = 10;
+						output(ERROR);
+					}
+				}
+				numUpdates = numUpdates - 1;
+			}
+			if val1 + val2 == expected then {
+				ans1 = val1;
+				ans2 = val2;
+				answerFound = 1;
+			}
+			else{
+				index2 = index2 + 1;
+				numUpdates = 1;
+				if index2 == size then {
+					index1 = index1 + 1;
+					index2 = index1 + 1;
+					numUpdates = 2;
+					if index2 == size then {
+						ERROR = 30;
+						output(ERROR);
+					}
+				}
+			}
+		}
+	}
+	output(ans1);
+	output(ans2);
+	if !(ERROR == 0) then {
+		output(ERROR);
+	}
+end

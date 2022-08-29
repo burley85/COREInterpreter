@@ -1,0 +1,150 @@
+program
+    ref expected, size;
+    int ERROR;
+
+    divideByTwo(ref d){
+        int start;
+        start = d;
+        while start <= (d * 2) - 1 {
+            d = d - 1;
+        }
+    }
+
+    initInputs(ref input0, input1, input2, input3, input4, input5, input6, input7, input8, input9) {
+        if 0 < size then {
+            input0 = input();
+        }
+        if 1 < size then {
+            input1 = input();
+        }
+        if 2 < size then {
+            input2 = input();
+        }
+        if 3 < size then {
+            input3 = input();
+        }
+        if 4 < size then {
+            input4 = input();
+        }
+        if 5 < size then {
+            input5 = input();
+        }
+        if 6 < size then {
+            input6 = input();
+        }
+        if 7 < size then {
+            input7 = input();
+        }
+        if 8 < size then {
+            input8 = input();
+        }
+        if 9 < size then {
+            input9 = input();
+        }
+    }
+    
+    getValAtIndex(ref index, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9) {
+        int val;
+        val = 0;
+        if size <= index or index < 0 then {
+            ERROR = 1;
+            output(size);
+            output(index);
+            output(10);
+            output(10);
+            output(10);
+        }
+        if index == 0 then {
+            val = input0;
+        }
+        if index == 1 then {
+            val = input1;
+        }
+        if index == 2 then {
+            val = input2;
+        }
+        if index == 3 then {
+            val = input3;
+        }
+        if index == 4 then {
+            val = input4;
+        }
+        if index == 5 then {
+            val = input5;
+        }
+        if index == 6 then {
+            val = input6;
+        }
+        if index == 7 then {
+            val = input7;
+        }
+        if index == 8 then {
+            val = input8;
+        }
+        if index == 9 then {
+            val = input9;
+        }
+        index = val;
+    }
+
+    binarySearch(ref arrayLen, startingPos, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9) {
+        if arrayLen == 1 then {
+            ref val;
+            val = new class;
+            val = startingPos;
+            begin getValAtIndex(val, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9);
+            if val == expected then {
+                output(startingPos);
+                output(val);
+            }
+        }
+
+        if 1 < arrayLen then {
+            ref halfLength;
+            ref newStart;
+            halfLength = new class;
+            newStart = new class;
+            halfLength = arrayLen;
+            newStart = startingPos;
+            begin divideByTwo(halfLength);
+
+            begin binarySearch(halfLength, newStart, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9);
+            
+            newStart = startingPos + halfLength;
+            halfLength = arrayLen - halfLength;
+            begin binarySearch(halfLength, newStart, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9);
+        }
+    }
+
+begin
+	expected = new class;
+    expected = input();
+    ref input0, input1, input2, input3, input4, input5, input6, input7, input8, input9;
+    input0 = new class;
+	input1 = new class;
+	input2 = new class;
+	input3 = new class;
+	input4 = new class;
+	input5 = new class;
+	input6 = new class;
+	input7 = new class;
+	input8 = new class;
+	input9 = new class;
+	size = new class;
+	size = input();
+	if size < 1 then {
+		ERROR = 1;
+        output(20);
+		output(20);
+		output(20);
+	}
+    begin initInputs(input0, input1, input2, input3, input4, input5, input6, input7, input8, input9);
+    
+    ref start;
+    ref arrayLen;
+    start = new class;
+    arrayLen = new class;
+    arrayLen = size;
+    start = 0;
+    begin binarySearch(arrayLen, start, input0, input1, input2, input3, input4, input5, input6, input7, input8, input9);
+end

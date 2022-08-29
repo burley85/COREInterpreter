@@ -41,7 +41,7 @@ int main(int argc, char **argv){
     else initScanner("./0.code", &s);
 
     p = parseProg(&s);
-    printProg(p, 0);
+    //printProg(p, 0);
     
     if(argc > 2) input = fopen(argv[2], "r");
     else input = stdin;
