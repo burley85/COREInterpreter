@@ -52,7 +52,7 @@ def main():
     for i in range(100):
         random = Random()
         expected = random.randint(0, 255)
-        size = random.randint(1, 10)
+        size = random.randint(1, 100)
         expectedIndex = random.randint(0, size - 1)
         array = [0] * size
         array[expectedIndex] = expected

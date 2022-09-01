@@ -21,13 +21,14 @@ typedef struct Scanner {
     tokenType currentToken;
 } Scanner;
 
-// <assign> ::= id = input ( ) ; | id = <expr> ; | id = new class; | id = share id ;
+// <assign> ::= id = input ( ) ; | id = <expr> ; | id = new class; | id = share id | id = share id + <expr> | id = share id - <expr> ;
 typedef struct Assign
 {
     struct ID *id;
     struct ID *id2;
     int inputAssignment;
     struct Expr *expr;
+    int addOp;
 } Assign;
 
 // <cmpr> ::= <expr> == <expr> | <expr> < <expr> | <expr> <= <expr>

@@ -151,7 +151,7 @@ void assign(Memory *mem, char *idName, int val){
     if(b->id.type == IntID) b->value = val;
 }
 
-void share(Memory *mem, char *dest, char *src, int address){
+void share(Memory *mem, char *dest, char *src, int offset){
     if(DEBUG) printf("DEBUG: entering %s\n", __func__);
     
     Binding *bDest = findBinding(mem, dest);
@@ -159,18 +159,26 @@ void share(Memory *mem, char *dest, char *src, int address){
         printf("ERROR: assign could not find ID, %s.\n", dest);
         exit(0);
     }
-
+    int addr = offset;
     if(src) {
         Binding *bSrc = findBinding(mem, src);
         if(!bSrc){
             printf("ERROR: assign could not find ID, %s.\n", src);
             exit(0);
         }
-        bDest->value = bSrc->value;
+        addr += bSrc->value;
     }
-    else{
-        bDest->value = address;
+
+    if(addr < 0){
+        printf("ERROR: assign of ref ID, %s, to a negative address.\n", src);
+        exit(0);
     }
+
+    if(addr >= mem->maxHeapSize){
+        printf("ERROR: assign of ref ID, %s, beyond max heap address.\n", src);
+        exit(0);
+    }
+    bDest->value = addr;
 }
 
 void newClass(Memory *mem, char *idName){

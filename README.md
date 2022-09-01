@@ -36,10 +36,9 @@
 
 <h3>Planned Features and Changes:</h3>
     <p>&emsp;&emsp;Add pointer arithmetic. The CORE language grammar will be updated to support this.
-    <br>&emsp;&emsp;&emsp;(<code>id = share id ;</code> will be changed to <code>id = share id + &lt;expr> ; | id = share id - &lt;expr> ;</code>)</p>
+    <br>&emsp;&emsp;&emsp;(<code>id = share id ;</code> will be changed to <br>&emsp;&emsp;&emsp;<code>id = share id ; | id = share id + &lt;expr> ; | id = share id - &lt;expr> ;</code>)</p>
     <p>&emsp;&emsp;Comparison expression to check if two references refer to the same integer in the heap.
     <br>&emsp;&emsp;&emsp;(<code>id == share id </code> will be added to the list of <code>&lt;cmpr></code> expressions </p>
-    <p>&emsp;&emsp;Garbage collector using the semi-space garbage collection algorithm </p>
 
 <h3>Testing:</h3>
     <p>&emsp;&emsp;The bulk of my testing was done by writing programs in the CORE programming language that solve typical algorithm problems (Two Sum, Binary Search, etc.), then writing a python script to generate 100 random inputs for those problems and running the program using that input to ensure the results are as expected.</p>

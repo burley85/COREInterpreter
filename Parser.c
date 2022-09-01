@@ -304,6 +304,7 @@ Assign *parseAssign(Scanner *scanner, IDListStack *ids){
     a->id2 = NULL;
     a->inputAssignment = 0;
     a->id = malloc(sizeof(ID));
+    a->addOp = 0;
     
 
     if (currentToken(scanner) != IDENTIFIER){
@@ -386,6 +387,15 @@ Assign *parseAssign(Scanner *scanner, IDListStack *ids){
         }
         //Consume ID
         nextToken(scanner);
+        
+        if(currentToken(scanner) == ADD || currentToken(scanner) == SUB){
+            if(currentToken(scanner) == ADD) a->addOp = 1;
+            //Consume operator
+            nextToken(scanner);
+
+            a->expr = parseExpr(scanner, ids);
+        }
+
         break;
     default:
         a->expr = parseExpr(scanner, ids);

@@ -100,9 +100,16 @@ void printAssign(Assign *assign, int indent){
     printIndents(indent);
     printf("%s = ", assign->id->name);
     if(assign->inputAssignment) printf("input()");
+    else if(assign->id2){
+        printf("share %s", assign->id2->name);
+        if(assign->expr){
+            if(assign->addOp) printf(" + ");
+            else printf(" - ");
+            printExpr(assign->expr, indent);
+        }
+    }
     else if(assign->expr) printExpr(assign->expr, indent);
-    else if(assign->id2) printf("share %s", assign->id2->name);
-    else printf(" new class");
+    else printf("new class");
     printf(";\n");
 }
 

@@ -122,8 +122,10 @@ void execAssign(Assign *a, Memory *mem, FILE *input){
         }
         assign(mem, a->id->name, val);
     }
-    else if(a->expr) assign(mem, a->id->name, execExpr(a->expr, mem));
+    else if(a->id2 && a->expr && a->addOp) share(mem, a->id->name, a->id2->name, execExpr(a->expr, mem));
+    else if(a->id2 && a->expr) share(mem, a->id->name, a->id2->name, -1 * execExpr(a->expr, mem));
     else if(a->id2) share(mem, a->id->name, a->id2->name, 0);
+    else if(a->expr) assign(mem, a->id->name, execExpr(a->expr, mem));
     else newClass(mem, a->id->name);
 }
 
